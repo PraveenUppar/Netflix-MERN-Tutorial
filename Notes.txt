@@ -1,0 +1,52 @@
+Netflix MERN Tutorial 
+
+STEP 1: Create two folders -> Frontend and Backend
+STEP 2: Create a package json file --> npm init -y --> npm install express jsonwebtoken mongoose cookie-parser dotenv axios bcryptjs
+STEP 3: Create a file --> Backend --> npm init -y --> server.js
+STEP 4: In the package json file add -> "type": "module",
+STEP 5: In the package json file add -> "dev": "node --watch backend/server.js" instead of test
+STEP 6: In the package json file add -> "main": "backend/server.js",
+STEP 7: Create a folder --> Backend --> Routes --> auth routes.js
+STEP 8: Create a file --> Backend --> Controllers
+
+From server.js --> routes --> auth routes.js --> controllers --> controllers.js
+username: praveenuppar718
+password: 60XvjMsbqhxlgyUp
+
+STEP 9: Setup mongo DB 
+STEP 10: Create a folder --> Backend --> config --> envVars.js
+
+All the the environment variables are coming from the dotenv --> config --> envVars.js --> server.js
+
+STEP 11: Create a file --> Backend --> config --> db.js (Connect to mongoDB)
+STEP 12: Create a folder --> Backend --> models --> user.model.js (Create a user Collection)
+STEP 13: Create a folder --> Backend --> Utils --> generateTokens.js
+
+API Key :  215d1366515667c7b4be9b2c06c63187
+API Read Access Token : eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMTVkMTM2NjUxNTY2N2M3YjRiZTliMmMwNmM2MzE4NyIsIm5iZiI6MTczODA1NDQ2Ny4zMTQsInN1YiI6IjY3OTg5YjQzNzAyZjQ5MmY0NzhmNzU4NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.EF5VA1Oil1GkqLtcbD7sMD0b8BGdd07hdUi2g4mlLPI
+
+STEP 14: Create a folder --> Backend --> services --> store all the movie api and function 
+STEP 15: Create a file --> Backend --> routes --> movie.routes.js 
+STEP 16: Create a file --> Backend --> controllers --> movie.controller.js
+STEP 17: Create a file --> Backend --> routes --> tv.routes.js 
+STEP 18: Create a file --> Backend --> controllers --> tv.controller.js
+STEP 19: Create a file --> Backend --> routes --> search.routes.js 
+STEP 20: Create a file --> Backend --> controllers --> search.controller.js
+
+STEP 21: Create a file --> Backend --> middleware (protect the route if the user is not logged in) 
+
+STEP 22: Frontend --> npm create vite@latest . --> npm install --> npm run dev --> npm i axios lucide-react react-player react-hot-toast react-router-dom zustand and Install Tailwind
+
+
+Deployment :
+
+"scripts": {
+    "dev": "NODE_ENV = development node --watch backend/server.js",
+    "start": "NODE_ENV = production node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix"
+  },
+
+Git ignore --> Node modules + env + dist
+
+--> npm run build --> npm run start
+
